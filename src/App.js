@@ -5,14 +5,17 @@ import Create from './pages/create/Create';
 import Search from './pages/search/Search';
 import Recipe from './pages/recipe/Recipe';
 import Navbar from './components/Navbar';
+import ThemeSelector from './components/ThemeSelector';
 // style
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar/>
+         <ThemeSelector/>
           <Routes>
               <Route exact path='/' element={<Home/>}></Route>
               <Route path='/create' element={<Create/>}></Route>
